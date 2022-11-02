@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="cms_page_render">
+        <observer name="hypershop_shortcodes_cms_page_render" instance="Hypershop\Shortcodes\Observer\Cms\PageRender"/>
+    </event>
+    <event name="cms_block_load_after">
+        <observer name="hypershop_shortcodes_cms_block_load_after" instance="Hypershop\Shortcodes\Observer\Cms\BlockLoadAfter"/>
+    </event>
+</config>

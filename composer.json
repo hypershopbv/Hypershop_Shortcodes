@@ -1,0 +1,18 @@
+{
+    "name": "hypershop/module-shortcodes",
+    "version": "100.4.5",
+    "type": "magento2-module",
+    "description": "Magento 2 module to add shortcodes to CMS pages & blocks",
+    "homepage": "https://github.com/hypershopbv/Hypershop_Shortcodes",
+    "license": [
+        "OSL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Hypershop\\Shortcodes\\": ""
+        }
+    }
+}
