@@ -1,7 +1,7 @@
 # Hypershop_Shortcodes
 
 ## Goal
-- This module created to add shortcodes to CMS pages & blocks and convert those into HTML wraps.
+- This module is created to add shortcodes to CMS pages & blocks and convert those into HTML wraps.
 
 ## Installation / Setup
 - Install the module using the command `composer require hypershop/module-shortcodes`
