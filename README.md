@@ -9,7 +9,8 @@
 
 ## Usage / Settings
 Initially the only shortcode to this module is:
-```
+
+```html
 [wrap]
 Your content here
 [/wrap]
@@ -17,7 +18,7 @@ Your content here
 
 This will be converted into:
 
-```
+```html
 <div class="wrap">
 Your content here
 </div>
@@ -25,7 +26,7 @@ Your content here
 
 You can extend the shortcode list within your theme or through a custom module by extending it like this:
 
-```
+```xml
 <referenceBlock name="shortcodes">
     <arguments>
         <argument name="list" xsi:type="array">
