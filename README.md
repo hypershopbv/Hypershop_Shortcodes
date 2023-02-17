@@ -24,23 +24,29 @@ Your content here
 </div>
 ```
 
-You can extend the shortcode list within your theme or through a custom module by extending it like this:
+You can extend the shortcode list within your theme or through a custom module or theme by extending it like this in a layout XML file:
 
 ```xml
-<referenceBlock name="shortcodes">
-    <arguments>
-        <argument name="list" xsi:type="array">
-            <item name="second-shortcode" xsi:type="array">
-                <item name="shortcode" xsi:type="string">second-shortcode</item>
-                <item name="class" xsi:type="string">second-shortcode-class</item>
-            </item>
-            <item name="third-shortcode" xsi:type="array">
-                <item name="shortcode" xsi:type="string">third-shortcode</item>
-                <item name="class" xsi:type="string">third-shortcode-class</item>
-            </item>
-        </argument>
-    </arguments>
-</referenceBlock>
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="shortcodes">
+            <arguments>
+                <argument name="list" xsi:type="array">
+                    <item name="second-shortcode" xsi:type="array">
+                        <item name="shortcode" xsi:type="string">second-shortcode</item>
+                        <item name="class" xsi:type="string">second-shortcode-class</item>
+                    </item>
+                    <item name="third-shortcode" xsi:type="array">
+                        <item name="shortcode" xsi:type="string">third-shortcode</item>
+                        <item name="class" xsi:type="string">third-shortcode-class</item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
 ```
 
 ## Common issues
