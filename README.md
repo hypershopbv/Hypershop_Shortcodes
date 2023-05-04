@@ -24,6 +24,22 @@ Your content here
 </div>
 ```
 
+It is also possible to add extra classes to the shortcode:
+
+```html
+[wrap extra-class="extra-class-one extra-class-two extra-class-three"]
+Your content here
+[/wrap]
+```
+
+This will be converted into:
+
+```html
+<div class="wrap extra-class-one extra-class-two extra-class-three">
+Your content here
+</div>
+```
+
 You can extend the shortcode list within your theme or through a custom module or theme by extending it like this in a layout XML file:
 
 ```xml
